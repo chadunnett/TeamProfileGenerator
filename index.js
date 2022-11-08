@@ -36,14 +36,14 @@ inquirer
       ])
       .then((answers) => {
         if (answers.addEmp === "Engineer"){
-           new Employee(Engineer)
+           new Engineer
         } else if (answers.addEmp === "Intern"){
-          new Employee(Intern)
+         new Intern
         }
       })
 
 .then((answers) => {
-  generateMarkdown(answers);
+  generateHtml(answers);
     const html = ``
     fs.writeFile('index.html',html, (err) =>
   err ? console.error(err) : console.log('Success!')

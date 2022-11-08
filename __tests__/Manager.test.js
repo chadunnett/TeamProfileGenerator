@@ -1,11 +1,11 @@
 const Manager = require('../lib/Manager')
 
-xdescribe('Manager', () => {
+describe('Manager', () => {
     describe('getName', () => {
         it('should give you the name of the employee', () => {
-            const name = 'Frank';
-            const result = new Manager().getName(name);
-            expect(result).toEqual(Manager.name)
+            const officeNumber = '1';
+            const result = new Manager().getOffice(officeNumber);
+            expect(result).toEqual(Manager.officeNumber)
         });
     });
 })
